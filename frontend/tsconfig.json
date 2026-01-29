@@ -2,8 +2,6 @@
   "compilerOptions": {
     // Target modern browsers
     "target": "ES2020",
-
-    "ignoreDeprecations": "6.0",
     
     // Use ES modules
     "module": "ESNext",

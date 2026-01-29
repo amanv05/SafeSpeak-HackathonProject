@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    // Target modern browsers
+    "target": "ES2020",
+
+    "ignoreDeprecations": "6.0",
+    
+    // Use ES modules
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    
+    // Enable strict type checking (catches more bugs!)
+    "strict": true,
+    
+    // Allow importing JSON files
+    "resolveJsonModule": true,
+    
+    // Ensure consistent imports/exports
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    
+    // JSX support for React
+    "jsx": "react-jsx",
+    
+    // Don't emit JS files (Vite handles this)
+    "noEmit": true,
+    
+    // Skip type checking node_modules
+    "skipLibCheck": true,
+    
+    // Helpful error messages
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    
+    // Path aliases (optional but nice)
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  
+  // Include all TypeScript files in src
+  "include": ["src"],
+  
+  // Reference Vite's types
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
